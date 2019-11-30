@@ -1,12 +1,12 @@
 {
-	"name": "xethron/migrations-generator",
+	"name": "oscarafdev/migrations-generator",
 	"description": "Generates Laravel Migrations from an existing database",
 	"keywords": ["laravel", "migration", "generator", "migrations", "artisan"],
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Bernhard Breytenbach",
-			"email": "bernhard@coffeecode.co.za"
+			"name": "Oscar Fernandez",
+			"email": "oscarafdev@gmail.com"
 		}
 	],
 	"require": {
