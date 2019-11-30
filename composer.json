@@ -12,7 +12,7 @@
 	"require": {
 		"php": "^7.2",
 		"illuminate/support": "^6.0",
-		"xethron/laravel-4-generators": "~3.1.0",
+		"OscarAFDev/laravel-4-generators": "~3.1.0",
 		"doctrine/dbal": "~2.4"
 	},
 	"autoload": {
