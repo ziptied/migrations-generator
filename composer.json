@@ -17,7 +17,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"Xethron\\MigrationsGenerator": "src/"
+			"OscarAFDev\\MigrationsGenerator": "src/"
 		}
 	},
 	"require-dev": {
@@ -30,7 +30,7 @@
 		"laravel": {
 			"providers": [
 				"Way\\Generators\\GeneratorsServiceProvider",
-				"Xethron\\MigrationsGenerator\\MigrationsGeneratorServiceProvider"
+				"OscarAFDev\\MigrationsGenerator\\MigrationsGeneratorServiceProvider"
 			]
 		}
 	}
