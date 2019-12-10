@@ -36,6 +36,9 @@ Check out Chung Tran's blog post for a quick step by step introduction: [Generat
 
 Changelog for Laravel Migrations Generator
 
+### 10 December 2019: v2.0.12
+* Support for Laravel 6
+
 ### 20 November 2016: v2.0.0
 * Support for Laravel 5
 
