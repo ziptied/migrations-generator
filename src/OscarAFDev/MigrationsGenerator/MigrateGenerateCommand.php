@@ -14,6 +14,7 @@ use OscarAFDev\MigrationsGenerator\Syntax\AddToTable;
 use OscarAFDev\MigrationsGenerator\Syntax\DroppedTable;
 use OscarAFDev\MigrationsGenerator\Syntax\AddForeignKeysToTable;
 use OscarAFDev\MigrationsGenerator\Syntax\RemoveForeignKeysFromTable;
+use Illuminate\Support\Str;
 
 use Illuminate\Contracts\Config\Repository as Config;
 
