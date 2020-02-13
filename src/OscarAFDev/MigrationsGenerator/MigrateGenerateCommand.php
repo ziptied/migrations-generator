@@ -325,7 +325,7 @@ class MigrateGenerateCommand extends GeneratorCommand {
 		}
 
 		return [
-			'CLASS' => ucwords(\Str::camel($this->migrationName)),
+			'CLASS' => ucwords(Str::camel($this->migrationName)),
 			'UP'    => $up,
 			'DOWN'  => $down
 		];
