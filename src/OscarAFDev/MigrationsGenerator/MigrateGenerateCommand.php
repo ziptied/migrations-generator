@@ -240,7 +240,7 @@ class MigrateGenerateCommand extends GeneratorCommand {
 
 		foreach ( $tables as $table ) {
 			$this->table = $table;
-			$this->migrationName = 'create_'. $this->table .'_table';
+			$this->migrationName = 'create_' . str_replace('.', '', $this->table) . '_table';
 			$this->fields = $this->schemaGenerator->getFields( $this->table );
 
 			$this->generate();
@@ -325,7 +325,7 @@ class MigrateGenerateCommand extends GeneratorCommand {
 		}
 
 		return [
-			'CLASS' => ucwords(Str::camel(str_replace('.', '', $this->migrationName))),
+			'CLASS' => ucwords(Str::camel($this->migrationName)),
 			'UP'    => $up,
 			'DOWN'  => $down
 		];
