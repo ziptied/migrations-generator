@@ -90,7 +90,10 @@ Thanks to Jeffrey Way for his amazing Laravel-4-Generators package. This package
 ## Contributors
 
 Bernhard Breytenbach ([@BBreyten](https://twitter.com/BBreyten))
+
 Oscar Fernandez ([@oscarafdev](https://www.linkedin.com/in/oscarafdev/))
+
+ofernandez@sofrecom.com.ar
 
 ## License
 
