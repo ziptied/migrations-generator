@@ -1,4 +1,4 @@
-# Laravel Migrations Generator Laravel 6+
+# Laravel Migrations Generator Laravel 5/6/7 +
 
 
 [![Latest Stable Version](https://poser.pugx.org/oscarafdev/migrations-generator/v/stable)](https://packagist.org/packages/oscarafdev/migrations-generator)
