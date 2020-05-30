@@ -13,7 +13,7 @@ Generate Laravel Migrations from an existing database, including indexes and for
 The recommended way to install this is through composer:
 
 ```bash
-composer require oscarafdev/migrations-generator
+composer require oscarafdev/migrations-generator --dev
 ```
 
 In Laravel 5.5+ the service providers will automatically get registered. 
