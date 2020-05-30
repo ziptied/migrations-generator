@@ -16,7 +16,7 @@
 		"doctrine/dbal": "~2.10"
 	},
 	"autoload": {
-		"psr-4": {
+		"psr-0": {
 			"OscarAFDev\\MigrationsGenerator": "src/"
 		}
 	},
