@@ -48,6 +48,7 @@ class FieldGenerator {
 	 * @param string $table
 	 * @return array
 	 */
+	
 	protected function getEnum($table)
 	{
 		try {
@@ -70,11 +71,11 @@ class FieldGenerator {
 	 * @param string $table
 	 * @return array
 	 */
-	protected function setEnum(array $fields, $table)
+	 protected function setEnum(array $fields, $table)
 	{
 		foreach ($this->getEnum($table) as $column) {
-			$fields[$column->column_name]['type'] = 'enum';
-			$fields[$column->column_name]['args'] = str_replace('enum(', 'array(', $column->column_type);
+			$fields[$column->COLUMN_NAME]['type'] = 'enum';
+			$fields[$column->COLUMN_NAME]['args'] = str_replace('enum(', 'array(', $column->COLUMN_TYPE);
 		}
 		return $fields;
 	}
