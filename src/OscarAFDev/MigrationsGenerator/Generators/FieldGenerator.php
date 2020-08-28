@@ -71,14 +71,19 @@ class FieldGenerator {
 	 * @param string $table
 	 * @return array
 	 */
-	 protected function setEnum(array $fields, $table)
-	{
-		foreach ($this->getEnum($table) as $column) {
-			$fields[$column->COLUMN_NAME]['type'] = 'enum';
-			$fields[$column->COLUMN_NAME]['args'] = str_replace('enum(', 'array(', $column->COLUMN_TYPE);
-		}
-		return $fields;
-	}
+    protected function setEnum(array $fields, $table)
+    {
+        foreach ($this->getEnum($table) as $column) {
+            if (isset($column->COLUMN_NAME)) {
+                $fields[$column->COLUMN_NAME]['type'] = 'enum';
+                $fields[$column->COLUMN_NAME]['args'] = str_replace('enum(', 'array(', $column->COLUMN_TYPE);
+            } elseif (isset($column->column_name)) {
+                $fields[$column->column_name]['type'] = 'enum';
+                $fields[$column->column_name]['args'] = str_replace('enum(', 'array(', $column->column_type);
+            }
+        }
+        return $fields;
+    }
 
 	/**
 	 * @param \Doctrine\DBAL\Schema\Column[] $columns
