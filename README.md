@@ -36,6 +36,11 @@ Check out Chung Tran's blog post for a quick step by step introduction: [Generat
 
 Changelog for Laravel Migrations Generator
 
+### Ago 2020: v2.0.23
+* Added support for precisions in timestamp.
+* Fixed an issue with the text type.
+* Fixed other reported bugs
+
 ### May 2020: v2.0.19
 * Support for Laravel 7
 
